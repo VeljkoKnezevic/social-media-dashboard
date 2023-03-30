@@ -1,0 +1,133 @@
+@use "../utils/" as u;
+
+//For both
+.header {
+  border-radius: 0px 0px 20px 20px;
+  min-height: u.rem(235);
+  padding-inline: u.rem(24);
+  padding-block-start: u.rem(36);
+
+  @include u.breakpoint(large) {
+    min-height: u.rem(244);
+    padding: u.rem(36) u.rem(165) 0 u.rem(162);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: u.rem(24);
+    line-height: u.rem(29);
+
+    @include u.breakpoint(large) {
+      font-size: u.rem(28);
+      line-height: u.rem(34);
+    }
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: u.rem(14);
+    line-height: u.rem(17);
+    margin-block-start: u.rem(4);
+  }
+
+  .dark-mode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    //U figmi margin minus padding
+    margin-block-start: calc(41px - 16px);
+    padding-block-start: u.rem(16);
+    border-block-start: 1px solid;
+
+    @include u.breakpoint(large) {
+      border-block-start: none;
+      margin: 0;
+      //Margin u figmi sa vrha minus padding top
+      padding-block-start: calc(49px - 36px);
+    }
+
+    &__text {
+      font-weight: 700;
+      font-size: u.rem(14);
+      line-height: u.rem(17);
+
+      @include u.breakpoint(large) {
+        margin-inline-end: u.rem(13);
+      }
+    }
+  }
+}
+.dark {
+  background-color: #1d1f29;
+
+  .header {
+    background: #20222f;
+
+    &__heading {
+      color: #ffffff;
+    }
+
+    &__text {
+      color: #8c98c6;
+    }
+
+    .dark-mode {
+      border-block-start-color: #333a55;
+
+      &__text {
+        color: #8c98c6;
+      }
+
+      .react-switch {
+        &-bg {
+          background: linear-gradient(
+            225deg,
+            #40db82 0%,
+            #388fe7 98.02%
+          ) !important;
+        }
+
+        &-handle {
+          background: #333a55 !important;
+        }
+      }
+    }
+  }
+}
+
+.light {
+  background-color: #ffffff;
+  .header {
+    background: #f7f9ff;
+    border-radius: 0px 0px 20px 20px;
+
+    &__heading {
+      color: #1d1f29;
+    }
+
+    &__text {
+      color: #63687d;
+    }
+
+    .dark-mode {
+      border-block-start-color: #848bab;
+
+      &__text {
+        color: #63687d;
+      }
+
+      .react-switch {
+        &-bg {
+          background: #aeb3cb !important;
+        }
+
+        &-handle {
+          background: #f1f3fa !important;
+        }
+      }
+    }
+  }
+}
