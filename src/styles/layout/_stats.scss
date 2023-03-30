@@ -1,1 +1,135 @@
 @use "../utils/" as u;
+
+.stats {
+  display: grid;
+  gap: u.rem(24);
+  margin-inline: u.rem(24);
+  //margin top prvog elementa plus polovina njega samog
+  margin-block-start: u.rem(-42);
+
+  #facebook {
+    border-color: var(--facebook);
+  }
+
+  #twitter {
+    border-color: var(--twitter);
+  }
+
+  #instagram {
+    border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
+    border-width: 4px;
+    border-style: solid;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+  #youtube {
+    border-color: var(--youtube);
+  }
+
+  &__card {
+    border-radius: u.rem(5);
+    padding: u.rem(32) u.rem(99) u.rem(24);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-block-start: 4px solid;
+
+    &__image-and-handle {
+      display: flex;
+      gap: u.rem(8);
+    }
+
+    &__handle {
+      font-weight: 700;
+      font-size: u.rem(12);
+      line-height: u.rem(15);
+    }
+
+    &__text {
+      font-weight: 400;
+      font-size: u.rem(12);
+      line-height: u.rem(15);
+      text-align: center;
+      letter-spacing: u.rem(5);
+      text-transform: uppercase;
+      margin-block-start: u.rem(28);
+
+      span {
+        font-weight: 700;
+        display: block;
+        font-size: u.rem(56);
+        line-height: u.rem(48);
+        text-align: center;
+        letter-spacing: u.rem(-2);
+        margin-block-end: u.rem(9);
+      }
+    }
+
+    &__trend {
+      font-weight: 700;
+      font-size: u.rem(12);
+      line-height: u.rem(15);
+      color: var(--green);
+      position: relative;
+      margin-block-start: u.rem(25);
+
+      &::before {
+        content: url(../images/icon-up.svg);
+        position: absolute;
+        left: -12px;
+        bottom: 2px;
+      }
+
+      &--down {
+        color: var(--red);
+
+        &::before {
+          content: url(../images/icon-down.svg);
+          position: absolute;
+          left: -12px;
+          bottom: 2px;
+        }
+      }
+    }
+  }
+}
+
+.dark {
+  .stats {
+    &__card {
+      background: #252b42;
+
+      &__handle {
+        color: #8c98c6;
+      }
+
+      &__text {
+        color: #8c98c6;
+
+        span {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.light {
+  .stats {
+    &__card {
+      background: #f1f3fa;
+
+      &__handle {
+        color: #63687d;
+      }
+
+      &__text {
+        color: #63687d;
+        span {
+          color: #1d1f29;
+        }
+      }
+    }
+  }
+}

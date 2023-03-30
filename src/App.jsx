@@ -30,55 +30,65 @@ function App() {
       <main>
         <div className="stats">
           <div className="stats__card" id="facebook">
-            <img
-              className="stats__card__image"
-              src="./src/images/icon-facebook.svg"
-              alt="Facebook"
-            />
-            <p className="stats__card__handle">@nathanf</p>
+            <div className="stats__card__image-and-handle">
+              <img
+                className="stats__card__image"
+                src="./src/images/icon-facebook.svg"
+                alt="Facebook"
+              />
+              <p className="stats__card__handle">@nathanf</p>
+            </div>
             <p className="stats__card__text">
               <span>1987</span> Followers
             </p>
-            <p className="trend">12 Today</p>
+            <p className="stats__card__trend">12 Today</p>
           </div>
 
           <div className="stats__card" id="twitter">
-            <img
-              className="stats__card__image"
-              src="./src/images/icon-twitter.svg"
-              alt="Twitter"
-            />
-            <p className="stats__card__handle">@nathanf</p>
+            <div className="stats__card__image-and-handle">
+              <img
+                className="stats__card__image"
+                src="./src/images/icon-twitter.svg"
+                alt="Twitter"
+              />
+              <p className="stats__card__handle">@nathanf</p>
+            </div>
             <p className="stats__card__text">
               <span>1044</span> Followers
             </p>
-            <p className="trend"> 99 Today</p>
+            <p className="stats__card__trend"> 99 Today</p>
           </div>
 
           <div className="stats__card" id="instagram">
-            <img
-              className="stats__card__image"
-              src="./src/images/icon-instagram.svg"
-              alt="Instagram"
-            />
-            <p className="stats__card__handle">@realnathanf</p>
+            <div className="stats__card__image-and-handle">
+              <img
+                className="stats__card__image"
+                src="./src/images/icon-instagram.svg"
+                alt="Instagram"
+              />
+              <p className="stats__card__handle">@realnathanf</p>
+            </div>
             <p className="stats__card__text">
               <span>11k</span> Followers
             </p>
-            <p className="trend">1099 Today</p>
+            <p className="stats__card__trend">1099 Today</p>
           </div>
 
           <div className="stats__card" id="youtube">
-            <img
-              className="stats__card__image"
-              src="./src/images/icon-youtube.svg"
-              alt="Youtube"
-            />
-            <p className="stats__card__handle">Nathan F.</p>
+            <div className="stats__card__image-and-handle">
+              <img
+                className="stats__card__image"
+                src="./src/images/icon-youtube.svg"
+                alt="Youtube"
+              />
+              <p className="stats__card__handle">Nathan F.</p>
+            </div>
             <p className="stats__card__text">
               <span>8239</span> Subscribers
             </p>
-            <p className="trend">144 Today</p>
+            <p className="stats__card__trend stats__card__trend--down">
+              144 Today
+            </p>
           </div>
         </div>
         <div className="overview">
@@ -92,7 +102,7 @@ function App() {
                 alt="Facebook"
               />
               <p className="overview__card__number">87</p>
-              <p className="trend">3%</p>
+              <p className="overview__card__trend">3%</p>
             </div>
             <div className="overview__card">
               <p className="overview__card__text">Likes</p>
@@ -102,7 +112,7 @@ function App() {
                 alt="Facebook"
               />
               <p className="overview__card__number">52</p>
-              <p className="trend">2%</p>
+              <p className="overview__card__trend">2%</p>
             </div>
             <div className="overview__card">
               <p className="overview__card__text">Likes</p>
@@ -112,7 +122,7 @@ function App() {
                 alt="Instagram"
               />
               <p className="overview__card__number">5462</p>
-              <p className="trend">2257%</p>
+              <p className="overview__card__trend">2257%</p>
             </div>
             <div className="overview__card">
               <p className="overview__card__text">Profile Views</p>
@@ -122,7 +132,7 @@ function App() {
                 alt="Instagram"
               />
               <p className="overview__card__number">52k</p>
-              <p className="trend">1375%</p>
+              <p className="overview__card__trend">1375%</p>
             </div>
             <div className="overview__card">
               <p className="overview__card__text">Retweets</p>
@@ -132,7 +142,7 @@ function App() {
                 alt="Twitter"
               />
               <p className="overview__card__number">117</p>
-              <p className="trend">303%</p>
+              <p className="overview__card__trend">303%</p>
             </div>
             <div className="overview__card">
               <p className="overview__card__text">Likes</p>
@@ -142,7 +152,7 @@ function App() {
                 alt="Twitter"
               />
               <p className="overview__card__number">507</p>
-              <p className="trend">553%</p>
+              <p className="overview__card__trend">553%</p>
             </div>
             <div className="overview__card">
               <p className="overview__card__text">Likes</p>
@@ -152,7 +162,7 @@ function App() {
                 alt="Youtube"
               />
               <p className="overview__card__number">107</p>
-              <p className="trend">19%</p>
+              <p className="overview__card__trend">19%</p>
             </div>
             <div className="overview__card">
               <p className="overview__card__text">Total Views</p>
@@ -162,7 +172,7 @@ function App() {
                 alt="Youtube"
               />
               <p className="overview__card__number">1407</p>
-              <p className="trend">12%</p>
+              <p className="overview__card__trend">12%</p>
             </div>
           </div>
         </div>
