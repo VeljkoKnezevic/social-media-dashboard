@@ -20,7 +20,7 @@ const Stats = () => {
         <div className="stats__card__image-and-handle">
           <img
             className="stats__card__image"
-            src="./src/images/icon-twitter.svg"
+            src="/icon-twitter.svg"
             alt="Twitter"
           />
           <p className="stats__card__handle">@nathanf</p>
