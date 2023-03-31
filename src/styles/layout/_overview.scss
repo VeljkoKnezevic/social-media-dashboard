@@ -94,15 +94,19 @@
 .dark {
   .overview {
     &__heading {
-      color: #ffffff;
+      color: var(--white);
     }
 
     &__card {
+      &:hover {
+        cursor: pointer;
+        background: var(--charcoal);
+      }
       &__text {
-        color: #8c98c6;
+        color: var(--ceil);
       }
       &__number {
-        color: #ffffff;
+        color: var(--white);
       }
     }
   }
@@ -111,16 +115,20 @@
 .light {
   .overview {
     &__heading {
-      color: #63687d;
+      color: var(--dark-electric-blue);
     }
 
     &__card {
-      background: #f1f3fa;
+      background: var(--anti-flash-white);
+      &:hover {
+        cursor: pointer;
+        background: var(--azureish-white);
+      }
       &__text {
-        color: #63687d;
+        color: var(--dark-electric-blue);
       }
       &__number {
-        color: #1d1f29;
+        color: var(--dark-gunmetal);
       }
     }
   }

@@ -61,24 +61,25 @@
   }
 }
 .dark {
-  background-color: #1d1f29;
+  background-color: var(--dark-gunmetal);
 
   .header {
-    background: #20222f;
+    background: var(--light-gunmetal);
 
     &__heading {
-      color: #ffffff;
+      color: var(--white);
     }
 
     &__text {
-      color: #8c98c6;
+      color: var(--ceil);
     }
 
     .dark-mode {
-      border-block-start-color: #333a55;
+      border-block-start-color: var(--charcoal);
+      color: var(--ceil);
 
-      &__text {
-        color: #8c98c6;
+      &:hover {
+        color: var(--white);
       }
 
       .react-switch {
@@ -91,7 +92,7 @@
         }
 
         &-handle {
-          background: #333a55 !important;
+          background: var(--charcoal) !important;
         }
       }
     }
@@ -99,33 +100,37 @@
 }
 
 .light {
-  background-color: #ffffff;
+  background-color: var(--white);
   .header {
-    background: #f7f9ff;
-    border-radius: 0px 0px 20px 20px;
+    background: var(--ghost-white);
 
     &__heading {
-      color: #1d1f29;
+      color: var(--dark-gunmetal);
     }
 
     &__text {
-      color: #63687d;
+      color: var(--dark-electric-blue);
     }
 
     .dark-mode {
-      border-block-start-color: #848bab;
-
-      &__text {
-        color: #63687d;
-      }
+      border-block-start-color: var(--cool-grey);
+      color: var(--dark-electric-blue);
 
       .react-switch {
         &-bg {
-          background: #aeb3cb !important;
+          background: var(--crayola) !important;
+
+          &:hover {
+            background: linear-gradient(
+              225deg,
+              #40db82 0%,
+              #388fe7 98.02%
+            ) !important;
+          }
         }
 
         &-handle {
-          background: #f1f3fa !important;
+          background: var(--anti-flash-white) !important;
         }
       }
     }

@@ -135,17 +135,22 @@ main {
 .dark {
   .stats {
     &__card {
-      background: #252b42;
+      background: var(--yankees-blue);
+
+      &:hover {
+        cursor: pointer;
+        background: var(--charcoal);
+      }
 
       &__handle {
-        color: #8c98c6;
+        color: var(--ceil);
       }
 
       &__text {
-        color: #8c98c6;
+        color: var(--ceil);
 
         span {
-          color: #ffffff;
+          color: var(--white);
         }
       }
     }
@@ -155,16 +160,21 @@ main {
 .light {
   .stats {
     &__card {
-      background: #f1f3fa;
+      background: var(--anti-flash-white);
+
+      &:hover {
+        cursor: pointer;
+        background: var(--azureish-white);
+      }
 
       &__handle {
-        color: #63687d;
+        color: var(--dark-electric-blue);
       }
 
       &__text {
-        color: #63687d;
+        color: var(--dark-electric-blue);
         span {
-          color: #1d1f29;
+          color: var(--dark-gunmetal);
         }
       }
     }
