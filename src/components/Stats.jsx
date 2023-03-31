@@ -5,7 +5,7 @@ const Stats = () => {
         <div className="stats__card__image-and-handle">
           <img
             className="stats__card__image"
-            src="../src/images/icon-facebook.svg"
+            src="../../public/images/icon-facebook.svg"
             alt="Facebook"
           />
           <p className="stats__card__handle">@nathanf</p>
@@ -20,7 +20,7 @@ const Stats = () => {
         <div className="stats__card__image-and-handle">
           <img
             className="stats__card__image"
-            src="/icon-twitter.svg"
+            src="../../public/images/icon-twitter.svg"
             alt="Twitter"
           />
           <p className="stats__card__handle">@nathanf</p>
@@ -35,7 +35,7 @@ const Stats = () => {
         <div className="stats__card__image-and-handle">
           <img
             className="stats__card__image"
-            src="../src/images/icon-instagram.svg"
+            src="../../public/images/icon-instagram.svg"
             alt="Instagram"
           />
           <p className="stats__card__handle">@realnathanf</p>
@@ -50,7 +50,7 @@ const Stats = () => {
         <div className="stats__card__image-and-handle">
           <img
             className="stats__card__image"
-            src="../src/images/icon-youtube.svg"
+            src="../../public/images/icon-youtube.svg"
             alt="Youtube"
           />
           <p className="stats__card__handle">Nathan F.</p>
