@@ -1,1 +1,127 @@
 @use "../utils/" as u;
+
+.overview {
+  margin-inline: u.rem(24);
+  margin-block-start: u.rem(46);
+
+  @include u.breakpoint(xlarge) {
+    margin-inline: u.rem(165);
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  &__cards {
+    display: grid;
+
+    gap: u.rem(16);
+    padding-block-end: u.rem(45);
+    margin-block-start: u.rem(27);
+
+    @include u.breakpoint(large) {
+      max-width: u.rem(800);
+      margin-inline: auto;
+    }
+
+    @include u.breakpoint(xlarge) {
+      max-width: none;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      margin-block-start: u.rem(24);
+      column-gap: u.rem(30);
+      row-gap: u.rem(24);
+    }
+  }
+
+  &__card {
+    background: #252b42;
+    border-radius: 5px;
+
+    padding: u.rem(26) u.rem(31) u.rem(19) u.rem(24);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    &__text {
+      font-weight: 700;
+      font-size: u.rem(14);
+      line-height: u.rem(17);
+    }
+    &__logo {
+      justify-self: flex-end;
+    }
+    &__number {
+      font-weight: 700;
+      font-size: u.rem(32);
+      line-height: u.rem(39);
+    }
+    &__trend {
+      justify-self: flex-end;
+      align-self: flex-end;
+      //Od number minus trend margin bottom
+      padding-block-end: calc(24px - 19px);
+      font-weight: 700;
+      font-size: u.rem(12);
+      line-height: u.rem(15);
+      text-align: right;
+      position: relative;
+      color: #1eb589;
+
+      &::before {
+        content: url(../images/icon-up.svg);
+        position: absolute;
+        left: -12px;
+        bottom: 7px;
+      }
+
+      &--down {
+        color: var(--red);
+
+        &::before {
+          content: url(../images/icon-down.svg);
+          position: absolute;
+          left: -12px;
+          bottom: 7px;
+        }
+      }
+    }
+  }
+}
+
+.dark {
+  .overview {
+    &__heading {
+      color: #ffffff;
+    }
+
+    &__card {
+      &__text {
+        color: #8c98c6;
+      }
+      &__number {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.light {
+  .overview {
+    &__heading {
+      color: #63687d;
+    }
+
+    &__card {
+      background: #f1f3fa;
+      &__text {
+        color: #63687d;
+      }
+      &__number {
+        color: #1d1f29;
+      }
+    }
+  }
+}

@@ -112,7 +112,9 @@ function App() {
                 alt="Facebook"
               />
               <p className="overview__card__number">52</p>
-              <p className="overview__card__trend">2%</p>
+              <p className="overview__card__trend overview__card__trend--down">
+                2%
+              </p>
             </div>
             <div className="overview__card">
               <p className="overview__card__text">Likes</p>
@@ -162,7 +164,9 @@ function App() {
                 alt="Youtube"
               />
               <p className="overview__card__number">107</p>
-              <p className="overview__card__trend">19%</p>
+              <p className="overview__card__trend overview__card__trend--down">
+                19%
+              </p>
             </div>
             <div className="overview__card">
               <p className="overview__card__text">Total Views</p>
@@ -172,7 +176,9 @@ function App() {
                 alt="Youtube"
               />
               <p className="overview__card__number">1407</p>
-              <p className="overview__card__trend">12%</p>
+              <p className="overview__card__trend overview__card__trend--down">
+                12%
+              </p>
             </div>
           </div>
         </div>

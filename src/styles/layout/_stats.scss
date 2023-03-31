@@ -1,5 +1,9 @@
 @use "../utils/" as u;
 
+main {
+  min-height: 90.4vh;
+}
+
 .stats {
   display: grid;
   gap: u.rem(24);
@@ -7,12 +11,36 @@
   //margin top prvog elementa plus polovina njega samog
   margin-block-start: u.rem(-42);
 
+  @include u.breakpoint(large) {
+    max-width: u.rem(800);
+    margin-inline: auto;
+  }
+
+  @include u.breakpoint(xlarge) {
+    max-width: none;
+    grid-template-columns: repeat(4, 1fr);
+    margin-inline: u.rem(165);
+    //marign top broja plus polovina njega
+    margin-block-start: u.rem(-116);
+    gap: u.rem(30);
+  }
+
   #facebook {
     border-color: var(--facebook);
+    padding: u.rem(32) u.rem(99) u.rem(24);
+
+    @include u.breakpoint(xlarge) {
+      padding: u.rem(32) u.rem(64) u.rem(24);
+    }
   }
 
   #twitter {
     border-color: var(--twitter);
+    padding: u.rem(34) u.rem(95) u.rem(24);
+
+    @include u.breakpoint(xlarge) {
+      padding: u.rem(34) u.rem(60) u.rem(24);
+    }
   }
 
   #instagram {
@@ -22,14 +50,23 @@
     border-bottom: 0;
     border-left: 0;
     border-right: 0;
+    padding: u.rem(32) u.rem(104) u.rem(24);
+
+    @include u.breakpoint(xlarge) {
+      padding: u.rem(32) u.rem(68) u.rem(24);
+    }
   }
   #youtube {
     border-color: var(--youtube);
+    padding: u.rem(32) u.rem(94) u.rem(24);
+
+    @include u.breakpoint(xlarge) {
+      padding: u.rem(32) u.rem(58) u.rem(24);
+    }
   }
 
   &__card {
     border-radius: u.rem(5);
-    padding: u.rem(32) u.rem(99) u.rem(24);
     display: flex;
     flex-direction: column;
     align-items: center;
