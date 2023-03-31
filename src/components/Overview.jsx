@@ -7,7 +7,7 @@ const Overview = () => {
           <p className="overview__card__text">Page Views</p>
           <img
             className="overview__card__logo"
-            src="./src/images/icon-facebook.svg"
+            src="../src/images/icon-facebook.svg"
             alt="Facebook"
           />
           <p className="overview__card__number">87</p>
@@ -17,7 +17,7 @@ const Overview = () => {
           <p className="overview__card__text">Likes</p>
           <img
             className="overview__card__logo"
-            src="./src/images/icon-facebook.svg"
+            src="../src/images/icon-facebook.svg"
             alt="Facebook"
           />
           <p className="overview__card__number">52</p>
@@ -29,7 +29,7 @@ const Overview = () => {
           <p className="overview__card__text">Likes</p>
           <img
             className="overview__card__logo"
-            src="./src/images/icon-instagram.svg"
+            src="../src/images/icon-instagram.svg"
             alt="Instagram"
           />
           <p className="overview__card__number">5462</p>
@@ -39,7 +39,7 @@ const Overview = () => {
           <p className="overview__card__text">Profile Views</p>
           <img
             className="overview__card__logo"
-            src="./src/images/icon-instagram.svg"
+            src="../src/images/icon-instagram.svg"
             alt="Instagram"
           />
           <p className="overview__card__number">52k</p>
@@ -49,7 +49,7 @@ const Overview = () => {
           <p className="overview__card__text">Retweets</p>
           <img
             className="overview__card__logo"
-            src="./src/images/icon-twitter.svg"
+            src="../src/images/icon-twitter.svg"
             alt="Twitter"
           />
           <p className="overview__card__number">117</p>
@@ -59,7 +59,7 @@ const Overview = () => {
           <p className="overview__card__text">Likes</p>
           <img
             className="overview__card__logo"
-            src="./src/images/icon-twitter.svg"
+            src="../src/images/icon-twitter.svg"
             alt="Twitter"
           />
           <p className="overview__card__number">507</p>
@@ -69,7 +69,7 @@ const Overview = () => {
           <p className="overview__card__text">Likes</p>
           <img
             className="overview__card__logo"
-            src="./src/images/icon-youtube.svg"
+            src="../src/images/icon-youtube.svg"
             alt="Youtube"
           />
           <p className="overview__card__number">107</p>
@@ -81,7 +81,7 @@ const Overview = () => {
           <p className="overview__card__text">Total Views</p>
           <img
             className="overview__card__logo"
-            src="./src/images/icon-youtube.svg"
+            src="../src/images/icon-youtube.svg"
             alt="Youtube"
           />
           <p className="overview__card__number">1407</p>
